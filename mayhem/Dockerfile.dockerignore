@@ -1,0 +1,15 @@
+# Per-Dockerfile ignore for `docker build -f mayhem/Dockerfile .`: keep the FULL repo (incl. .git)
+# in the image; drop only local build outputs (build.sh regenerates them inside the image).
+build-fuzz/
+build-tests/
+fuzz_gba_rom
+fuzz_gba_rom-standalone
+fuzz_gb_rom
+fuzz_gb_rom-standalone
+fuzz_gba_state
+fuzz_gba_state-standalone
+fuzz_gb_state
+fuzz_gb_state-standalone
+fuzz_tbl
+fuzz_tbl-standalone
+ctrf-report.json

@@ -1,0 +1,9 @@
+project: savantenvs/mgba
+target: fuzz_tbl
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tbl/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tbl
+    libfuzzer: true
+    timeout: 10

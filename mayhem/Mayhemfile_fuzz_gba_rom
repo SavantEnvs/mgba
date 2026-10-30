@@ -1,0 +1,9 @@
+project: savantenvs/mgba
+target: fuzz_gba_rom
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gba_rom/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_gba_rom
+    libfuzzer: true
+    timeout: 10
